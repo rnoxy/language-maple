@@ -1,7 +1,7 @@
 # Maple language support for Atom
 
 ## Contributors
-* [Rafał Nowak](https:github.com/rnoxy)
+* [Rafał Nowak](https://github.com/rnoxy)
 
 ## Notes
 
