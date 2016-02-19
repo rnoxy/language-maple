@@ -1,0 +1,26 @@
+'scopeName': 'source.maple'
+'name': 'Maple'
+'fileTypes': ['mpl', 'maple']
+
+'patterns': [
+  {
+    include: "#comments"
+  }
+  {
+    include: "#keywords"
+  }
+]
+
+repository:
+  comments:
+    begin: '#'
+    end: '\\n'
+    name: 'comment.line.hash.maple'
+
+  keywords:
+    patterns: [
+      {
+        match: '\\b(local|global|from|to|break|case|catch|clear|continue|do|od|else|elseif|end|endproc|exit|for|if|then|pause|quit|return|try|while)\\b'
+        name: 'keyword.control.maple'
+      }
+    ]
