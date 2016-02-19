@@ -1,0 +1,26 @@
+{
+  "name": "language-maple",
+  "author": {
+    "name": "Rafał Nowak",
+    "email": "rafal.nowak@cs.uni.wroc.pl"
+  },
+  "version": "0.1",
+  "description": "Maple language support in Atom",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rnoxy/language-maple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rnoxy/language-maple/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {}
+}
+
+
+
+
+
