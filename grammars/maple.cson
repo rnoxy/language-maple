@@ -10,7 +10,13 @@
     include: "#keyword"
   }
   {
+    include: "#builtin"
+  }
+  {
     include: "#number"
+  }
+  {
+    include: "#string"
   }
 ]
 
@@ -28,6 +34,14 @@ repository:
       }
     ]
 
+  builtin:
+    patterns: [
+      {
+        match: '\\b(array|with)\\b'
+        name: 'entity.name.function.maple'
+      }
+    ]
+
   number:
     patterns: [
       {
@@ -37,5 +51,16 @@ repository:
       {
 		    match: '\\b(Pi|I|infinity)\\b'
 		    name: 'support.constant.maple'
+      }
+    ]
+
+  string:
+    begin: '\"'
+    end: '\"'
+    name: 'string.quoted.double.maple'
+    patterns: [
+      {
+        match: '(\\\\(?:[\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))'
+        name: 'constant.character.escape.maple'
       }
     ]
