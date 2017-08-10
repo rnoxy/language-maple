@@ -22,9 +22,18 @@
 
 repository:
   comment:
-    begin: '#'
-    end: '\\n'
-    name: 'comment.line.hash.maple'
+    patterns: [
+      {
+        begin: "\\(\\*"
+        end: "\\*\\)"
+        name: "comment.block.maple"
+      }
+      {
+        begin: "#"
+        end: "\\n"
+        name: "comment.line.maple"
+      }
+    ]
 
   keyword:
     patterns: [
